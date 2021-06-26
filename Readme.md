@@ -40,4 +40,15 @@
 #### casting
 - operation between int and float : cast int to float
     - try to use explicit decimal points
+# Day 3
 ### The For Statement
+#### choice between for and while
+- for
+    - when initialization and increment are single statements and logically related
+    - more compact
+    - keeps the loop control statements together in one place
+### Symbolic Constants
+#### #define
+- do not use "magic numbers" in a program
+- conventionally written in upper case
+- no semicolon at the end of a #define line
