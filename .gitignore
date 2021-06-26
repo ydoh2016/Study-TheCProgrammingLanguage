@@ -1,4 +1,2 @@
 # object files
-*.out
-*.o
-*.exe
+build/
