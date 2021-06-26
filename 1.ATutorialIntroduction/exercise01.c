@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("hello, Youtube!\n");
+    printf("hello, C languange!\n");
 
     return 0;
 }
