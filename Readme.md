@@ -68,3 +68,23 @@
 #### subscript
 - any integer expression
 - start at zero
+### Functions
+#### why?
+- encapsulate
+- clarify codes
+#### parameter vs argument
+- parameter
+    - formal argument
+    - variables used in function definition
+    - named in parenthesized list
+- argument
+    - actual argument
+    - values used in a call of the function
+#### return value
+- return with no expression is possible
+- caller can ignore any returned value
+- main function is recommended to return zero or non-zero values
+    - programs should return status to their environment
+### Arguments - Call by Value
+#### call by value
+- called funcion cannot directly alter a variable in the calling functoin
