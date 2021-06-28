@@ -2,21 +2,23 @@
 
 int main()
 {
-    while(1) // use ctrl + c to exit the loop in runtime
+    int c;
+    int isboolean = 1;
+
+    while(c = getchar() != EOF) // use ctrl + c to exit the loop in runtime
     {
-        if((getchar() != EOF) == 1)
+        if(c == 1 || c == 0)
         {
-            printf("getchar() != EOF is 1\n");
-        }
-        else if((getchar() != EOF) == 0)
-        {
-            printf("getchar() != EOF is 0\n");
+            isboolean = 1;
         }
         else
         {
-            printf("getchar() != EOF is neither 0 or 1\n");
+            isboolean = 0;
         }
     }
-
+    if(isboolean == 1)
+        printf("getchar() != EOF is 0 or 1\n");
+    else
+        printf("getchar() != EOF is not 0 or 1\n");
     return 0;
 }
