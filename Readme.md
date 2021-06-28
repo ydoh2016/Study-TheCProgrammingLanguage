@@ -6,7 +6,7 @@
 - function: not nested
 #### C : low-level
 - deals with characters, numbers, and addresses
-- do not deal with arrays, strings, sets, heap, gc, io
+- do not deal with arrays, strings, sets, heap, garbage collecting, io
 - straightforward, single-thread
 #### C : Programmers' points
 - compile-time errors
@@ -52,3 +52,19 @@
 - do not use "magic numbers" in a program
 - conventionally written in upper case
 - no semicolon at the end of a #define line
+# Day 4
+### Character Input And Outupt
+#### text stream
+- lines of zero or more characters each followed by newline character
+- each library should follow this model
+#### EOF
+- specific numeric value defined in <stdio.h>
+- cannot be represented in char type (EOF = -1)
+- type ctrl + d to represent EOF in terminal
+#### ASCII
+- prefer character set written between single quotes than its numerical value
+# Day 5
+### Arrays
+#### subscript
+- any integer expression
+- start at zero
