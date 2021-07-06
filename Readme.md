@@ -87,4 +87,12 @@
     - programs should return status to their environment
 ### Arguments - Call by Value
 #### call by value
-- called funcion cannot directly alter a variable in the calling functoin
+- called funcion cannot directly alter a variable in the calling function
+# Day 6
+### Character Arrays
+#### passing array to function
+- do not need to pass the length of the array
+#### null character
+- mark the end of the string
+- \0
+### External Variables and Scope
