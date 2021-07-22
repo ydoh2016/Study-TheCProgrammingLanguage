@@ -1,7 +1,8 @@
 #include <stdio.h>
-#define MAXLINE 1000
 
-int new_getline(char line[], int maxline);
+#define MAXLINE 5
+
+int tcpl_getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
 int main()
@@ -12,7 +13,7 @@ int main()
     char longest[MAXLINE];
 
     max = 0;
-    while((len = new_getline(line, MAXLINE)) > 0)
+    while((len = tcpl_getline(line, MAXLINE)) > 0)
     {
         if(len > max)
         {
@@ -20,30 +21,43 @@ int main()
             copy(longest, line);
         }
     }
+    
     if(max > 0)
     {
-        printf("%s", longest);
+        printf("length : %d\ntext : %s\n", max, longest);
     }
 
     return 0;
 }
 
-int new_getline(char s[], int lim)
+int tcpl_getline(char s[], int lim)
 {
     int c;
     int i;
 
-    for(i = 0; i < lim - 1 && (c = getchar()) != EOF && c!= '\n'; ++i)
+    for(i = 0; (c = getchar()) != EOF && c!= '\n'; ++i)
     {
-        s[i] = c;
+        if(i < lim - 1)
+        {
+            s[i] = c;
+        }
     }
     if(c == '\n')
     {
-        s[i] = c;
-        ++i;
+        if(i < lim - 1)
+        {
+            s[i] = c;
+        }
     }
-    s[i] = '\0';
-
+    if(i < lim - 1)
+    {
+        s[i] = '\0';
+    }
+    else
+    {
+        s[lim - 1] = '\0';
+    }
+    
     return i;
 }
 
