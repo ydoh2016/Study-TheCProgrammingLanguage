@@ -95,4 +95,15 @@
 #### null character
 - mark the end of the string
 - \0
+# Day 7
 ### External Variables and Scope
+#### local variables(automatic variables)
+#### external variables
+- use keyword `extern` in usage, if declaration of variables follows their usage
+- use header files when using external variables in several files
+#### local variables v.s. external variables
+- using external variables anytime leads to a fragile program
+- using external variables anytime leads to not-reusable program
+#### definition v.s. declaration
+- definition : state variables, and assign storage
+- declaration : state variables, but not assign storage
