@@ -1,5 +1,5 @@
 # DAY 1
-## Introduction
+## :blue_book: **Introduction** :blue_book:
 #### C
 - type
 - control-flow constructions
@@ -12,7 +12,7 @@
 - compile-time errors
 - function declaration
 - standard library
-## A Tutorial Introduction
+## :blue_book: **A Tutorial Introduction** :blue_book:
 ### Getting Started
 #### How to compile
 - gcc -o [object file name] [c file name]
@@ -107,3 +107,52 @@
 #### definition v.s. declaration
 - definition : state variables, and assign storage
 - declaration : state variables, but not assign storage
+# Day 8
+## :blue_book: **Types, Operators, and Expressions** :blue_book:
+#### Declarations
+- list the variables, their types, their initial values
+#### operators
+- specify jobs
+#### expressions
+- combine variables and constants
+#### change on ANSI
+- signed and unsigned forms of all integer types
+- notations for unsigned constants and hexadecimal character constants
+- floating-point operations done in single precision
+    - single precision : sign(1) - exp(8) - fraction(23)
+    - double precision : sign(1) - exp(11) - fraction(52)
+- string constants concatenated at compile time
+- enum is part of the language
+- objects available in const
+- augmented automatic coercions [learn more](https://www.geeksforgeeks.org/argument-coercion-in-c-c/)
+### Variable Names
+#### naming rules
+- use letters and digits, _(underscore)
+- first character must be a letter
+- do not use _ as a first character since library routines often do that
+- use upper case for symbolic constants, lower case for variables in tradition
+- length limitation(not anymore in modern compilers)
+- choose short names for local variables, loop indices, longer names for external variables
+### Data Types and Sizes
+#### basic data types
+|types|description|
+|---|---|
+|char|a character|
+|int|an integer|
+|float|single-precision floating point|
+|double|double-pricision floating point|
+#### qualifiers
+|qualifiers|description|
+|---|---|
+|short|apply to integer, at least 16 bits|
+|long|apply to integer, at least 32 bits|
+|signed|apply to any types|
+|unsigned|apply to any types|
+#### signed char
+- char can be signed or unsigned dependent to a machine
+- printable characters are always positive
+#### long double
+- extended-precision floating point
+#### `<limits.h>`, `<float.h>`
+- contain symbolic constants for types
+
